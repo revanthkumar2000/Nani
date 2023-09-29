@@ -169,3 +169,8 @@ logging:
 # Maximum number of documents loaded by each shard to generate autocomplete suggestions.
 # This value must be a whole number greater than zero. Defaults to 100_000
 #unifiedSearch.autocomplete.valueSuggestions.terminateAfter: 100000
+#for opening port
+# setcap cap_net_bind_service=+epi /usr/share/kibana/bin/kibana
+# setcap cap_net_bind_service=+epi /usr/share/kibana/bin/kibana-plugin
+# setcap cap_net_bind_service=+epi /usr/share/kibana/bin/kibana-keystore
+# setcap cap_net_bind_service=+epi /usr/share/kibana/node/bin/node
